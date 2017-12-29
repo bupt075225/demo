@@ -1,0 +1,6 @@
+演示使用netlink在用户态进程与内核态之间交换数据。
+
+usr/lookup_intf.c         :演示通过netlink查询网络接口信息
+usr/send_to_kernel.c      :演示通过netlink在用户态进程和内
+                           核态模块之间交换消息,与kernel/netl.c一起使用
+kernel/netl.c             :内核态模块接收用户态进程的消息并发送消息到用户态进程
